@@ -45,8 +45,8 @@ curl -o mega_core/layers/nms.py https://raw.githubusercontent.com/AndresHgit/P2_
 curl -o demo/predictor.py https://raw.githubusercontent.com/AndresHgit/P2_DL4VSP/main/predictor.py
 curl -o mega_core/layers/roi_align.py https://raw.githubusercontent.com/AndresHgit/P2_DL4VSP/main/roi_align.py
 curl -o mega_core/layers/roi_pool.py https://raw.githubusercontent.com/AndresHgit/P2_DL4VSP/main/roi_pool.py
-curl -o configs/vid_R_101_C4_1x.yaml https://raw.githubusercontent.com/AndresHgit/P2_DL4VSP/main/vid_R_101_C4_1x.yaml.py
-curl -o configs/MEGA/vid_R_101_C4_MEGA_1x.yaml https://raw.githubusercontent.com/AndresHgit/P2_DL4VSP/main/vid_R_101_C4_MEGA_1x.yaml.py
+curl -o configs/vid_R_101_C4_1x.yaml https://raw.githubusercontent.com/AndresHgit/P2_DL4VSP/main/vid_R_101_C4_1x.yaml
+curl -o configs/MEGA/vid_R_101_C4_MEGA_1x.yaml https://raw.githubusercontent.com/AndresHgit/P2_DL4VSP/main/vid_R_101_C4_MEGA_1x.yaml
 
 ```
 
