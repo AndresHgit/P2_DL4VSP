@@ -48,4 +48,22 @@ curl -o mega_core/layers/roi_pool.py https://raw.githubusercontent.com/AndresHgi
 curl -o configs/vid_R_101_C4_1x.yaml https://raw.githubusercontent.com/AndresHgit/P2_DL4VSP/main/vid_R_101_C4_1x.yaml.py
 curl -o configs/MEGA/vid_R_101_C4_MEGA_1x.yaml https://raw.githubusercontent.com/AndresHgit/P2_DL4VSP/main/vid_R_101_C4_MEGA_1x.yaml.py
 
+```
+
+## Running the code
+Before showing the specific instruction to run the code, both the input video/image_folder and the checkpoint files (see https://github.com/Scalsol/mega.pytorch Main Results) must be included in the folder mega.pytorch created during installation, and the code must be run from that folder as well.
+
+### Image folders 
+If the input video is stored as a group of independent images, the command line would be: 
+
+```
+python demo/demo.py ${METHOD} ${CONFIG_FILE} ${CHECKPOINT_FILE} [--visualize-path ${IMAGE-FOLDER}] [--suffix ${IMAGE_SUFFIX}][--output-folder ${FOLDER}] [--output-video]
+```
+
+### Video 
+If the video is stored in a normal video format, the command line would be: 
+
+```
+python demo/demo.py ${METHOD} ${CONFIG_FILE} ${CHECKPOINT_FILE} --video [--visualize-path ${VIDEO-NAME}] [--output-folder ${FOLDER}] [--output-video]
+```
 
