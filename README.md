@@ -1,2 +1,6 @@
 # P2_DL4VSP
-a
+
+# Installation 
+
+conda create --name MEGA -y python=3.7
+source activate MEGA
