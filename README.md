@@ -12,7 +12,7 @@ conda install ipython pip
 pip install ninja yacs cython matplotlib tqdm opencv-python scipy
 
 # pytorch 1.2.0 is required and torchvision 0.4.0 guarantees compatibility 
-conda install pytorch=1.3.0 torchvision=0.4.0 cudatoolkit=10.0 -c pytorch
+conda install pytorch=1.2.0 torchvision=0.4.0 cudatoolkit=10.0 -c pytorch
 
 export INSTALL_DIR=$PWD
 
