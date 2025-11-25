@@ -1,6 +1,7 @@
 # P2_DL4VSP
 
 ## Installation 
+To install the required dependencies for running the BASE and MEGA methods described in the CVPR 2020 paper “Memory Enhanced Global-Local Aggregation for Video Object Detection”, the following process must be carried out in a Linux terminal.
 
 ```text
 # For this installation is necessary to use a conda environment. If not available, this instructions will not work
@@ -69,7 +70,7 @@ If the video is stored in a normal video format, the command line would be:
 python demo/demo.py ${METHOD} ${CONFIG_FILE} ${CHECKPOINT_FILE} --video [--visualize-path ${VIDEO-NAME}] [--output-folder ${FOLDER}] [--output-video]
 ```
 
-### Aditional notes
+## Aditional notes
 This installation is designed to work for base and MEGA methods, any other change is not guaranteed to work, as this is not an original implementation.
 For the original implementation and more details about its functionalities and how this code works, see https://github.com/Scalsol.
 
