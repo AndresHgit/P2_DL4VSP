@@ -3,7 +3,7 @@
 ## Installation 
 
 ```text
-# 
+# For this installation is necessary to use a conda environment. If not available, this instructions will not work
 conda create --name MEGA -y python=3.7
 source activate MEGA
 
@@ -51,14 +51,16 @@ curl -o configs/MEGA/vid_R_101_C4_MEGA_1x.yaml https://raw.githubusercontent.com
 ```
 
 ## Running the code
-Before showing the specific instruction to run the code, both the input video/image_folder and the checkpoint files (see https://github.com/Scalsol/mega.pytorch Main Results) must be included in the folder mega.pytorch created during installation, and the code must be run from that folder as well.
+Before showing the specific instruction to run the code, both the input video or image_folder and the checkpoint files (see https://github.com/Scalsol/mega.pytorch Main Results) must be included in the folder mega.pytorch created during installation, and the code must be run from that folder as well.
 
 ### Image folders 
-If the input video is stored as a group of independent images, the command line would be: 
+If the input video is stored as the group of each independent frame, the command line would be: 
 
 ```
 python demo/demo.py ${METHOD} ${CONFIG_FILE} ${CHECKPOINT_FILE} [--visualize-path ${IMAGE-FOLDER}] [--suffix ${IMAGE_SUFFIX}][--output-folder ${FOLDER}] [--output-video]
 ```
+
+In this case, the frames in the folder need to be numbered with the following format, in order: 00000, 00001, 00002...
 
 ### Video 
 If the video is stored in a normal video format, the command line would be: 
@@ -66,4 +68,8 @@ If the video is stored in a normal video format, the command line would be:
 ```
 python demo/demo.py ${METHOD} ${CONFIG_FILE} ${CHECKPOINT_FILE} --video [--visualize-path ${VIDEO-NAME}] [--output-folder ${FOLDER}] [--output-video]
 ```
+
+### Aditional notes
+This installation is designed to work for base and MEGA methods, any other change is not guaranteed to work, as this is not an original implementation.
+For the original implementation and more details about its functionalities and how this code works, see https://github.com/Scalsol.
 
